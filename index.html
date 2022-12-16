@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Market</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- google icons  -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><span class="green">GREEN</span> <span class="purple">MARKET</span></h1>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </header>
+    <div class="bgimage-content">
+        <div class="content">
+            <h2>A Dummy Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia debitis harum modi fugiat voluptatum
+                repudiandae ut similique quasi porro eveniet esse blanditiis ex saepe error et sed, eaque perferendis
+                aspernatur!</p>
+            <button>Start Now</button>
+        </div>
+    </div>
+
+    <section class="cards">
+        <h2>Cards</h2>
+        <div class="content-card">
+            <div class="content">
+                <h2>A MeaningFull Heading</h2>
+                <p>
+                    Some Dummy Content like Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo nisi ipsum, placeat dolorum labore
+                    dignissimos tempora optio numquam, nemo sit, error aspernatur ab? Dicta exercitationem vitae harum
+                    quis et aut!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam accusamus aut culpa consequatur
+                    quos, iste reprehenderit molestias esse ipsam illum neque dignissimos autem quo id distinctio
+                    debitis aliquam recusandae a.</p>
+                <button>Know More</button>
+            </div>
+            <div class="image">
+                <img src="./images/content.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="information">
+        <h2>exclusive offer an escrow</h2>
+
+
+        <div class="tabs">
+            <button class="tablink" onclick="openPage('Home', this, 'var(--secondary-color)')">Heading 1</button>
+            <button class="tablink" onclick="openPage('News', this, 'var(--primary-color)')" id="defaultOpen">Heading 2</button>
+            <button class="tablink" onclick="openPage('Contact', this, 'var(--secondary-color)')">Heading 3</button>
+            <button class="tablink" onclick="openPage('About', this, 'var(--primary-color)')">Heading 4</button>
+
+            <div id="Home" class="tabcontent">
+                <h3>Heading 1</h3>
+                <p>Home is where the heart is.. some more content
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus esse incidunt vero ab! Quae rerum dignissimos iste fuga in.
+                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est dicta nobis veritatis eligendi voluptates! Inventore deserunt cum illum iusto. Assumenda quaerat adipisci nobis beatae nihil ab possimus corporis eligendi maiores, blanditiis nisi, nemo molestiae.</p>
+            </div>
+
+            <div id="News" class="tabcontent">
+                <h3>Heading 2</h3>
+                <p>Some news this fine day! and some more content Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus esse incidunt vero ab! Quae rerum dignissimos iste fuga in.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, cupiditate labore. Ipsam aspernatur eum, a totam, repellendus similique quae asperiores vero nihil natus laborum pariatur, culpa voluptate tempora? Hic, autem.
+                </p>
+            </div>
+
+            <div id="Contact" class="tabcontent">
+                <h3>Heading 3</h3>
+                <p>Get in touch, or swing by for a cup of coffee. some more content Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus esse incidunt vero ab! Quae rerum dignissimos iste fuga in.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ad saepe aut facere distinctio nam voluptates, at suscipit sunt doloremque enim ipsam, veniam quaerat! Ipsum qui harum ratione nam quod!</p>
+            </div>
+
+            <div id="About" class="tabcontent">
+                <h3>Heading 4</h3>
+                <p>Who we are and what we do. some more content Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus esse incidunt vero ab! Quae rerum dignissimos iste fuga in.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati non temporibus labore repudiandae praesentium facere eveniet aliquid magnam eligendi placeat natus aspernatur ratione dolores porro ullam, architecto sint quibusdam doloremque!</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="">
+            <input type="email" name="email" id="email" placeholder="Your Email Address" required>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Your Message" required></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

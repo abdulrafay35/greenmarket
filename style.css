@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.6s ease;
+
+}
+
+:root {
+    --primary-color : rgb(13, 121, 13);
+    --secondary-color: rgb(107, 3, 107);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 ,
+header span {    
+    font-family: 'Pacifico', cursive;
+}
+
+header h1 .green{
+    color: var(--primary-color);
+}
+
+header h1 .purple{
+    color: var(--secondary-color);
+}
+
+
+header .icons {
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    margin: 1rem auto;
+}
+
+header .icons i {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0.3rem;
+}
+
+header .icons i:hover {
+    background-color: var(--secondary-color);
+}
+
+
+.bgimage-content {
+    background: url("./images/pexels-pixabay-158063.jpg");
+    background-color: grey;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 8rem;
+    text-align: center;
+    color: white;
+}
+
+.bgimage-content h2 {
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+
+}
+
+.bgimage-content p {
+    letter-spacing: 0.089rem;
+    text-transform: capitalize;
+    margin: 0.5rem auto;
+}
+
+.bgimage-content button {
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 0.7rem 2.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+
+}
+
+.bgimage-content button:hover {
+    background-color: var(--primary-color);
+}
+
+.cards {
+    padding: 1rem 3rem;
+}
+
+.cards> h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+.cards .content-card {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.cards .content-card .image {
+    width: 900px;
+}
+
+.cards .content-card .image img {
+    width: 100%;
+}
+
+.cards .content-card .content h2 {
+    color: var(--secondary-color);
+}
+
+.cards .content-card .content button{
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+.cards .content-card .content button:hover {
+    background-color: var(--secondary-color);
+}
+
+.information {
+    padding: 1rem 3rem;
+
+}
+
+.information h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+/* tabs  */
+
+
+  
+  /* Style tab links */
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    /* color: white; */
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+
+  .tabcontent h3 {
+    font-family: 'Pacifico', cursive;
+    color: var(--secondary-color);
+  }
+
+
+  #Home, #News, #Contact, #About {
+    background-color: whitesmoke;
+  }
+
+
+
+.contact {
+    padding: 1rem 3rem;
+
+}
+
+.contact h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+.contact form {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 70%;
+    margin: 1rem auto;
+}
+
+.contact form input[type = email], 
+.contact form textarea {
+    padding: 0.3rem 0.8rem;
+    outline: none;
+    border: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.4rem;
+}
+
+.contact form input[type = submit] {
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.contact form input[type = submit]:hover {
+    background-color: var(--secondary-color);
+}
