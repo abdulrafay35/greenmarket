@@ -1,23 +1,28 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
     transition: 0.6s ease;
 
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+}
 :root {
     --primary-color : rgb(13, 121, 13);
     --secondary-color: rgb(107, 3, 107);
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 1rem;
+    text-align: center;
 }
 
 header h1 ,
@@ -34,25 +39,6 @@ header h1 .purple{
 }
 
 
-header .icons {
-    display: flex;
-    align-items: center;
-    justify-content:center ;
-    margin: 1rem auto;
-}
-
-header .icons i {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.3rem;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 0.3rem;
-}
-
-header .icons i:hover {
-    background-color: var(--secondary-color);
-}
 
 
 .bgimage-content {
@@ -64,69 +50,75 @@ header .icons i:hover {
     padding: 8rem;
     text-align: center;
     color: white;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.63);
 }
 
 .bgimage-content h2 {
     font-size: 3rem;
-    font-family: 'Pacifico', cursive;
-
-}
-
-.bgimage-content p {
-    letter-spacing: 0.089rem;
-    text-transform: capitalize;
-    margin: 0.5rem auto;
-}
-
-.bgimage-content button {
-    color: white;
-    background-color: var(--secondary-color);
-    padding: 0.7rem 2.5rem;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    margin-top: 2rem;
-    font-weight: bold;
     text-transform: uppercase;
-    border-radius: 0.5rem;
-
+    font-weight: 900;
 }
 
-.bgimage-content button:hover {
-    background-color: var(--primary-color);
+.bgimage-content .arrow-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
 }
+
+.bgimage-content .arrow-content .row h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+}
+
+.bgimage-content .arrow-content .row i {
+    font-size: 2rem;
+    margin: 1rem auto;
+    color: var(--primary-color);
+}
+
+
 
 .cards {
     padding: 1rem 3rem;
 }
 
 .cards> h2 {
-    font-family: 'Pacifico', cursive;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     text-align: center;
     margin: 1.5rem auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    
 }
 
 .cards .content-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 3rem;
 
 }
 
-.cards .content-card .image {
-    width: 900px;
-}
 
-.cards .content-card .image img {
-    width: 100%;
-}
 
 .cards .content-card .content h2 {
     color: var(--secondary-color);
 }
 
-.cards .content-card .content button{
+.cards .content-card .content a.btn{
     color: white;
     background-color: var(--primary-color);
     padding: 0.5rem 2rem;
@@ -135,10 +127,12 @@ header .icons i:hover {
     cursor: pointer;
     text-transform: uppercase;
     margin: 1rem 0;
+    display: inline-block;
     border-radius: 0.5rem;
+    text-decoration: none;
 }
 
-.cards .content-card .content button:hover {
+.cards .content-card .content a.btn:hover {
     background-color: var(--secondary-color);
 }
 
@@ -148,10 +142,10 @@ header .icons i:hover {
 }
 
 .information h2 {
-    font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
     text-align: center;
     margin: 1.5rem auto;
+    text-transform: uppercase;
 }
 
 /* tabs  */
@@ -185,10 +179,28 @@ header .icons i:hover {
   }
 
   .tabcontent h3 {
-    font-family: 'Pacifico', cursive;
     color: var(--secondary-color);
   }
 
+  .tabcontent .image {
+    width: 300px;
+  }
+
+  .tabcontent .image img {
+    width: 100%;
+  }
+
+  .tabcontent button {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+  }
 
   #Home, #News, #Contact, #About {
     background-color: whitesmoke;
@@ -202,16 +214,21 @@ header .icons i:hover {
 }
 
 .contact h2 {
-    font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
     text-align: center;
     margin: 1.5rem auto;
+    text-transform: uppercase;
 }
 
 .contact form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 1rem;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 70%;
     margin: 1rem auto;
 }
@@ -237,4 +254,87 @@ header .icons i:hover {
 
 .contact form input[type = submit]:hover {
     background-color: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 300;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+
+    .bgimage-content {
+        padding: 5rem 3rem;
+    }
+    
+    .bgimage-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .bgimage-content .arrow-content {
+        gap: 1.5rem;
+    }
+
+    .tablink {
+        float: left;
+        cursor: pointer;
+        padding: 10px 12px;
+        font-size: 15px;
+        width: 50%;
+      }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+
+
+    .bgimage-content {
+        padding: 3rem 2rem;
+    }
+    
+    .bgimage-content h2 {
+        font-size: 2rem;
+    }
+    
+    .bgimage-content .arrow-content {
+        gap: 1.3rem;
+    }
+
+    .tablink {
+        float: left;
+        cursor: pointer;
+        padding: 8px 10px;
+        font-size: 14px;
+        width: 50%;
+      }
+}
+
+
+@media only screen and (max-width: 440px) {
+    html {
+        font-size: 13px;
+    }
+
+
+    .bgimage-content {
+        padding: 2rem 1rem;
+    }
+    
+    .bgimage-content h2 {
+        font-size: 1.7rem;
+    }
+    
+    .bgimage-content .arrow-content {
+        gap: 1rem;
+    }
+
 }
