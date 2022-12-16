@@ -296,6 +296,10 @@ footer {
         font-size: 14px;
     }
 
+    p {
+        font-size: 16px;
+    }
+
 
     .bgimage-content {
         padding: 3rem 2rem;
@@ -304,7 +308,7 @@ footer {
     .bgimage-content h2 {
         font-size: 2rem;
     }
-    
+
     .bgimage-content .arrow-content {
         gap: 1.3rem;
     }
@@ -316,12 +320,20 @@ footer {
         font-size: 14px;
         width: 50%;
       }
+
+      .contact form {
+        width: 80%;
+    }
 }
 
 
 @media only screen and (max-width: 440px) {
     html {
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 16px;
     }
 
 
@@ -334,7 +346,30 @@ footer {
     }
     
     .bgimage-content .arrow-content {
-        gap: 1rem;
+        gap: 1.2rem;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .tabcontent .image {
+        width: 100%;
+      }
+
+      .contact form {
+        width: 100%;
+    }
+
+    .information {
+        padding: 1rem;
+    
+    }
+
+    .cards {
+        padding: 1rem;
+    }
+
+    .contact {
+        padding: 1.5rem;
     }
 
 }
