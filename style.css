@@ -47,6 +47,7 @@ header button {
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 0.5rem;
+    margin: 1rem auto;
 }
 
 
@@ -99,13 +100,13 @@ header button {
 
 
 .cards {
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
 }
 
 .cards> h2 {
     font-size: 2.8rem;
     text-align: center;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
     text-transform: uppercase;
     font-weight: bold;
     
@@ -136,7 +137,7 @@ header button {
     border: none;
     cursor: pointer;
     text-transform: uppercase;
-    margin: 1rem 0;
+    margin-top: 2rem;
     display: inline-block;
     border-radius: 0.5rem;
     text-decoration: none;
@@ -147,14 +148,14 @@ header button {
 }
 
 .information {
-    padding: 1rem 3rem;
+    padding: 0 3rem 1rem 3rem;
 
 }
 
 .information h2 {
     font-size: 2.5rem;
     text-align: center;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
     text-transform: uppercase;
 }
 
